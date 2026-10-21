@@ -6,6 +6,10 @@
         "type": "git",
         "url": "https://github.com/Terncode/math-expression-parser.git"
     },
+    "homepage": "https://github.com/Terncode/math-expression-parser#readme",
+    "bugs": {
+        "url": "https://github.com/Terncode/math-expression-parser/issues"
+    },
     "type": "module",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
