@@ -1,0 +1,46 @@
+{
+    "name": "math-expression-parser",
+    "version": "1.0.0",
+    "description": "A lightweight math expression parser and evaluator.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Terncode/math-expression-parser.git"
+    },
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint --config eslint.config.mjs \"src/**/*.ts\"",
+        "lint-fix": "eslint --fix --config eslint.config.mjs \"src/**/*.ts\"",
+        "test": "vitest run",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "math",
+        "expression",
+        "parser",
+        "evaluator",
+        "typescript"
+    ],
+    "author": "",
+    "license": "GPL-3.0-only",
+    "devDependencies": {
+        "typescript": "^6.0.3",
+        "vitest": "^4.1.5",
+        "@eslint/js": "^10.0.1",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-unicorn": "^78.0.0",
+        "eslint-plugin-unused-imports": "^4.4.1",
+        "typescript-eslint": "^8.72.0"
+    }
+}
